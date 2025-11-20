@@ -32,6 +32,8 @@ Instead, **the game itself turns the active player into the host**, and all othe
 
 ## 🚀 How It Works
 
+![Mindmap](mindmap.png)
+
 1. **A player starts the launcher and becomes the host**  
    Their device runs the world and acts as the temporary server.
 

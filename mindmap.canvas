@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"14e7411ee35aeb7b","type":"text","text":"SharedHost App","x":-348,"y":-60,"width":250,"height":60,"color":"5"},
+		{"id":"11032deff22040ac","type":"text","text":"Player","x":-473,"y":-180,"width":250,"height":60,"color":"5"},
+		{"id":"f41137c67e1b9054","type":"text","text":"**Local Multiplayer-System**","x":20,"y":-55,"width":250,"height":50,"color":"6"},
+		{"id":"8d77885d1235e667","type":"text","text":"Any Minecraft Version","x":-348,"y":140,"width":250,"height":60,"color":"4"},
+		{"id":"d465df8bd63547e3","type":"text","text":"Checks if any other Player is already hosting the world","x":340,"y":-60,"width":250,"height":60,"color":"6"},
+		{"id":"1461ce94ebaf8705","type":"text","text":"**Yes:**\nAdd the IP-Address of the Host-Tunnel to the Multiplayer-Menu","x":720,"y":-160,"width":250,"height":130,"color":"5"},
+		{"id":"ecb84907055ca046","type":"text","text":"No:\nAdd \"Start Hosting\" button to Minecraft","x":720,"y":-5,"width":250,"height":94,"color":"5"},
+		{"id":"916f37ac511aad58","type":"text","text":"## Hosting Procedure","x":-105,"y":460,"width":250,"height":60,"color":"6"},
+		{"id":"f77f95f9ecaa87df","type":"text","text":"Cloud Drive\nExample: Google Drive, Dropbox etc","x":270,"y":150,"width":260,"height":100,"color":"3"},
+		{"id":"a6d2be07721f26e1","type":"text","text":"Synchronise World with Cloud","x":-578,"y":720,"width":250,"height":60,"color":"2"},
+		{"id":"3794cfd5451075ce","type":"text","text":"Join downloaded Singleplayer world","x":-280,"y":720,"width":250,"height":60,"color":"2"},
+		{"id":"fab19ba8685f11bb","type":"text","text":"Set up `Network-Tunnel` (like Bedrock edition, essentials mod or e4mc)","x":20,"y":700,"width":250,"height":100,"color":"2"},
+		{"id":"b5afa236080968a6","type":"text","text":"Save updated World to cloud & Delete Metadata","x":-652,"y":465,"width":250,"height":60,"color":"2"},
+		{"id":"82a3bfa8557a7f3c","type":"text","text":"Share Metadata to Cloud Drive (Host-Tunnel IP-Address, username etc)","x":320,"y":700,"width":250,"height":100,"color":"2"},
+		{"id":"ff1f038a87d6de26","type":"text","text":"# SharedHost (Minecraft Hosting System)\n","x":-30,"y":-320,"width":543,"height":65,"color":"2"},
+		{"id":"28d0627e49bc77ad","x":20,"y":42,"width":250,"height":60,"color":"6","type":"text","text":"Anticheat System"}
+	],
+	"edges":[
+		{"id":"8963a54d80c8140c","fromNode":"11032deff22040ac","fromSide":"bottom","toNode":"14e7411ee35aeb7b","toSide":"top","color":"5"},
+		{"id":"8267716a8559dc32","fromNode":"14e7411ee35aeb7b","fromSide":"bottom","toNode":"8d77885d1235e667","toSide":"top","color":"5","label":"Runs after MP-System executed"},
+		{"id":"55bc1106d886ad28","fromNode":"14e7411ee35aeb7b","fromSide":"right","toNode":"f41137c67e1b9054","toSide":"left","color":"6"},
+		{"id":"92f5c2fd8590b179","fromNode":"8d77885d1235e667","fromSide":"right","toNode":"f41137c67e1b9054","toSide":"left","color":"6"},
+		{"id":"2bdb39495fa804b2","fromNode":"d465df8bd63547e3","fromSide":"right","toNode":"1461ce94ebaf8705","toSide":"left","color":"6"},
+		{"id":"42976c292de3dd76","fromNode":"f41137c67e1b9054","fromSide":"right","toNode":"d465df8bd63547e3","toSide":"left","color":"6"},
+		{"id":"bc57e30f8c5c2a82","fromNode":"d465df8bd63547e3","fromSide":"right","toNode":"ecb84907055ca046","toSide":"left","color":"6"},
+		{"id":"3452aeef618ce25a","fromNode":"d465df8bd63547e3","fromSide":"bottom","toNode":"f77f95f9ecaa87df","toSide":"top","color":"3","label":"Connects"},
+		{"id":"5d987551a6ac0a75","fromNode":"ecb84907055ca046","fromSide":"bottom","toNode":"916f37ac511aad58","toSide":"right","color":"6","label":"On button press"},
+		{"id":"7ef32d0694032e4b","fromNode":"916f37ac511aad58","fromSide":"top","toNode":"f77f95f9ecaa87df","toSide":"bottom","color":"3","label":"Connects"},
+		{"id":"94a6848f1cd247f7","fromNode":"916f37ac511aad58","fromSide":"bottom","toNode":"a6d2be07721f26e1","toSide":"top","color":"2","label":"1"},
+		{"id":"3333cb2c72bae248","fromNode":"916f37ac511aad58","fromSide":"bottom","toNode":"3794cfd5451075ce","toSide":"top","color":"2","label":"2"},
+		{"id":"2db20a080bdf3adf","fromNode":"916f37ac511aad58","fromSide":"bottom","toNode":"fab19ba8685f11bb","toSide":"top","color":"2","label":"3"},
+		{"id":"724d356ccf69559e","fromNode":"916f37ac511aad58","fromSide":"bottom","toNode":"82a3bfa8557a7f3c","toSide":"top","color":"2","label":"4"},
+		{"id":"dae5dd9844bdfcf6","fromNode":"916f37ac511aad58","fromSide":"left","toNode":"b5afa236080968a6","toSide":"right","color":"2","label":"On world close"},
+		{"id":"61fec7c030a50b8b","fromNode":"f41137c67e1b9054","fromSide":"bottom","toNode":"28d0627e49bc77ad","toSide":"top","color":"6"}
+	]
+}
