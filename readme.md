@@ -1,4 +1,6 @@
-# SharedHost ☁️⚡  
+# SharedHost ☁️⚡
+  
+## [IN DEVELOPMENT]
 
 A minimal, zero-configuration Minecraft hosting system where **one player acts as the active host** — without any server setup, port forwarding, or networking knowledge required.
 
